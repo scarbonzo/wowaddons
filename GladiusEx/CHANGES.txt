@@ -1,0 +1,38 @@
+Changes since tag 1.0-beta-2
+
+commit 2ca604b8c39f4a5fd649e5fb322711311858cf16
+Author: vendethiel <vendethiel@hotmail.fr>
+Date:   Sun Dec 24 01:52:02 2017 +0100
+
+    Fix default values merge, fix #10
+
+commit fdbe894985d0fa9ab3487f67ddcef4486925a8b4
+Author: vendethiel <vendethiel@hotmail.fr>
+Date:   Sun Dec 24 01:51:19 2017 +0100
+
+    allow hiding arena frames, fixes #11
+
+commit e62d16f307b264abd0858706563e39ffa574a7e9
+Author: vendethiel <vendethiel@hotmail.fr>
+Date:   Sat Nov 25 14:43:26 2017 +0100
+
+    Cooldown group names/dispellable buffs, fix #6 fix #8
+
+commit 4e47e4c5cc5e9149cdb4527b6d2eaa0a5a718b09
+Author: vendethiel <vendethiel@hotmail.fr>
+Date:   Wed Nov 22 21:55:18 2017 +0100
+
+    Add ability to ignore cast alerts on self, fix #7
+
+commit c2570cda609d3f226acc70a7331160e834ad3c6a
+Author: vendethiel <vendethiel@hotmail.fr>
+Date:   Wed Nov 22 21:26:01 2017 +0100
+
+    change auras
+
+commit d56f586869a71feb4e0c5e945ea543790eea7b34
+Author: vendethiel <vendethiel@hotmail.fr>
+Date:   Wed Nov 22 21:25:51 2017 +0100
+
+    use castGUIDs, fix #5
+

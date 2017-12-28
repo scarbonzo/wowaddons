@@ -1,0 +1,10 @@
+lightweight tag 3d07a8c88b407d73c92487e20ef93f52caeb2760 v2.3
+Author:	Eliote <>
+Date:	Tue Aug 29 20:17:21 2017 -0300
+
+commit 3d07a8c88b407d73c92487e20ef93f52caeb2760
+Author: Eliote <>
+Date:   Tue Aug 29 20:17:21 2017 -0300
+
+    Update to WoW 7.3
+

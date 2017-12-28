@@ -1,0 +1,8 @@
+Changes since tag v7.3.2
+
+commit e809006c7665e1ee9596c4baa3961a49489dd683
+Author: Resike <resike@gmail.com>
+Date:   Tue Dec 12 19:53:05 2017 +0100
+
+    Force display refresh, closes #3 (#4)
+

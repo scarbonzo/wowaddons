@@ -1,0 +1,8 @@
+Changes since tag 4.7.10
+
+commit 5c05e085d7556bdafed7ae9670b43489923b65f8
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Wed Nov 8 14:37:26 2017 +0100
+
+    Remove pre-7.3 compat
+

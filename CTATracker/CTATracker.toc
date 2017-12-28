@@ -1,0 +1,12 @@
+## Interface: 70100
+## Title: CTA Tracker
+## Author: Matthew Seagle
+## Notes: Track Call To Arms
+## SavedVariablesPerCharacter: CTATracker_HeroicWatch, CTATracker_TWWatch, CTATracker_LFRWatch, CTATracker_HeroicTankWatch, CTATracker_HeroicHealerWatch, CTATracker_HeroicDPSWatch, CTATracker_TWTankWatch, CTATracker_TWHealerWatch, CTATracker_TWDPSWatch, CTATracker_LFRTankWatch, CTATracker_LFRHealerWatch, CTATracker_LFRDPSWatch, CTATracker_PlaySound, CTATracker_FrameScale
+CTATrackerVars.lua
+CTATrackerSC.lua
+CTATrackerLFGButtons.lua
+CTATrackerDisplay.lua
+CTATrackerConfig.lua
+CTATracker.xml
+CTATrackerLookup.lua

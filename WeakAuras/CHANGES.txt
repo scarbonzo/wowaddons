@@ -1,0 +1,10 @@
+tag 58a778bab3623d4bd0892d976cabf653bf6306ad 2.5.1
+Author:	Benjamin Staneck <staneck@gmail.com>
+Date:	Fri Dec 22 17:41:43 2017 +0100
+
+commit fa3859f4b034d0415a5ae4d9b51e224bfe4073e2
+Author: Infus <infus@squorn.de>
+Date:   Fri Dec 22 17:18:28 2017 +0100
+
+    Improve BuffTrigger upgrade code
+

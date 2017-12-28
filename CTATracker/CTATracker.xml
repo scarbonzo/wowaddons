@@ -1,0 +1,54 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+                   ..\..\FrameXML\UI.xsd">
+	<Script file="CTATrackerLookup.lua"/>
+	<Frame name="CTATracker_MainFrame" enableMouse="true" movable="true" parent="UIParent">
+		<Size><AbsDimension x="300" y="30"/></Size>
+		<Anchors>
+			<Anchor point="CENTER"/>
+		</Anchors>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture>
+					<Size><AbsDimension x="140" y="59"/></Size>
+					<Color r="0.25" g="0.25" b="0.25" a="0.25"/>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad>
+				self.CTATracker_TimeSinceLastUpdate = 0.0;
+        self.CTATracker_GarbageCollectionTime = 0.0;
+				self:RegisterEvent("LFG_LOCK_INFO_RECEIVED");
+				self:RegisterEvent("LFG_UPDATE_RANDOM_INFO");
+        self:RegisterEvent("RAID_ROSTER_UPDATE");
+        self:RegisterEvent("PARTY_MEMBERS_CHANGED");
+        self:RegisterEvent("ADDON_LOADED");
+        CTATracker_MainFrame:SetScale(1.25);
+				CTATracker_HideMainFrame();
+        CTATracker_CreateInnerFrame();
+			</OnLoad>
+			<OnUpdate function="CTATracker_UpdateInterval"/>
+			<OnEvent function="CTATracker_LFGUpdate"/>
+			<OnMouseDown>
+				if button == "LeftButton" and not self.isMoving then
+					self:StartMoving();
+					self.isMoving = true;
+				end
+			</OnMouseDown>
+			<OnMouseUp>
+				if button == "LeftButton" and self.isMoving then
+					self:StopMovingOrSizing();
+					self.isMoving = false;
+				end
+			</OnMouseUp>
+			<OnHide>
+				if ( self.isMoving ) then
+					self:StopMovingOrSizing();
+					self.isMoving = false;
+				end
+			</OnHide>
+		</Scripts>
+	</Frame>
+</Ui>
